@@ -31,5 +31,13 @@ namespace POE_Helper {
         public void test() {
             MessageBox.Show("Test");
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string getFilterChangedDate() {
+            return _instanceMainForm.GetFilterChangedDate();
+        }
     }
 }

@@ -126,5 +126,22 @@ namespace POE_Helper {
                 this.Size = Properties.Settings.Default.MainFormSize;
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string GetFilterChangedDate() {
+            string res = "";
+            string filePath = "";
+
+            try {
+                res = File.GetLastWriteTimeUtc(filePath).ToString();
+            } catch (Exception ex) {
+                // TODO
+            }
+
+            return res;
+        }
     }
 }
