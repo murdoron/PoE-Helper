@@ -11,7 +11,7 @@ namespace POE_Helper {
 
         public ChromiumWebBrowser chrome;
         private bool _ctrlPressed;
-        private PoEMessager _poE;
+        private PoEMessenger _poE;
 
         [DllImport("USER32.DLL", CharSet = CharSet.Unicode)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -27,7 +27,7 @@ namespace POE_Helper {
             }
         }
 
-        public PoEMessager PoE {
+        public PoEMessenger PoE {
             get {
                 return _poE;
             }
@@ -45,7 +45,7 @@ namespace POE_Helper {
             chrome.RegisterJsObject("cefCustomObject", new CefCustomObject(chrome, this));
 
             //
-            PoE = new PoEMessager();
+            PoE = new PoEMessenger();
         }
 
         /// <summary>

@@ -4,7 +4,7 @@ using System.Threading;
 using System.Windows.Forms;
 
 namespace POE_Helper {
-    public class PoEMessager {
+    public class PoEMessenger {
 
         [DllImport("USER32.DLL", CharSet = CharSet.Unicode)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -28,7 +28,7 @@ namespace POE_Helper {
         /// <summary>
         /// 
         /// </summary>
-        public PoEMessager() {
+        public PoEMessenger() {
             PoeHandle = FindWindow("POEWindowClass", "Path of Exile");
         }
 
