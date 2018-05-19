@@ -46,6 +46,11 @@ namespace POE_Helper {
 
             //
             PoE = new PoEMessenger();
+            //Overlay overlay = new Overlay();
+            //overlay.Show();
+
+            //overlay.MoveMode = true;
+            //overlay.ResizeMode = true;
         }
 
         /// <summary>
